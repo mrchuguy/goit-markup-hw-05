@@ -26,8 +26,7 @@
 			<div class="container header-container">
 				<nav class="nav">
 					<a href="./index.html" class="logo" lang="en">
-						<span class="logo-color">Web</span>
-						Studio
+						<span class="logo-color">Web</span>Studio
 					</a>
 					<ul class="list nav-list">
 						<li class="nav-list-item"><a href="./index.html" class="link nav-link current">Студия</a></li>
@@ -61,7 +60,7 @@
 			<section class="hero-section">
 				<div class="container">
 					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					<button type="button" class="btn modal-btn">Заказать услугу</button>
+					<button type="button" class="btn modal-btn" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 			<!--peculiarities list-->
@@ -344,8 +343,7 @@
 			<div class="container footer-container">
 				<div class="footer-contacts">
 					<a href="./index.html" class="logo footer-logo" lang="en">
-						<span class="logo-color">Web</span>
-						Studio
+						<span class="logo-color">Web</span>Studio
 					</a>
 					<address class="studio-address" id="contacts">
 						<ul class="list footer-list">
@@ -403,6 +401,17 @@
 				</div>
 			</div>
 		</footer>
+		<!-- backdrop and modal window -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal-window">
+				<button class="close-modal" type="button" data-modal-close>
+					<svg class="icon footer-social-icon" width="18" height="18">
+						<use href="./images/sprite/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<!-- Include js -->
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
